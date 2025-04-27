@@ -85,7 +85,7 @@ export default function RegisterPage() {
           onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
           className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-2 rounded-lg font-semibold mb-4 hover:from-green-600 hover:to-emerald-700 transition shadow"
         >
-          S'inscrire avec Google
+          Connexion avec Google
         </button>
         <div className="text-center text-gray-400 my-4">ou</div>
         <form onSubmit={handleSubmit} className="space-y-4">
