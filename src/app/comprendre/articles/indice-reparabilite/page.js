@@ -21,7 +21,7 @@ export default function IndiceReparabiliteArticle() {
         <p className="mb-4 text-gray-800">L&apos;indice de réparabilité est une note sur 10, affichée sur de nombreux appareils électroniques et électroménagers vendus en France. Il informe les consommateurs sur la facilité à réparer un produit, en prenant en compte la disponibilité des pièces détachées, la documentation technique, le démontage, et le prix des pièces.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Pourquoi est-il important ?</h2>
         <p className="mb-4 text-gray-800">Un indice élevé encourage la réparation plutôt que le remplacement, prolonge la durée de vie des appareils et réduit la quantité de déchets électroniques. C&apos;est un outil clé pour une consommation plus responsable et pour lutter contre l&apos;obsolescence programmée.</p>
-        <h2 className="text-xl font-semibold text-green-700 mb-3">Comment l'utiliser ?</h2>
+        <h2 className="text-xl font-semibold text-green-700 mb-3">Comment l&apos;utiliser ?</h2>
         <ul className="list-disc pl-6 mb-4 text-gray-800">
           <li>Comparez l&apos;indice lors de l&apos;achat d&apos;un nouvel appareil.</li>
           <li>Privilégiez les produits avec un indice élevé (&gt;7/10).</li>
@@ -29,7 +29,7 @@ export default function IndiceReparabiliteArticle() {
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Vers un futur plus durable</h2>
         <p className="mb-4 text-gray-800">En choisissant des produits réparables, vous agissez pour la planète et pour votre portefeuille. L&apos;indice de réparabilité est un allié pour une économie circulaire et une société plus durable.</p>
-        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis à jour en 2025</div>
+        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis a jour en 2025</div>
       </article>
     </main>
   );
