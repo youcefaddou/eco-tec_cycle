@@ -1,8 +1,9 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import React, { Suspense } from "react";
 
-export default function AuthErrorPage() {
+function ErrorContent() {
   const searchParams = useSearchParams();
   const error = searchParams.get("error");
 
@@ -17,5 +18,13 @@ export default function AuthErrorPage() {
         <Link href="/" className="text-green-600 font-semibold hover:underline">Retour &agrave; l&apos;accueil</Link>
       </div>
     </main>
+  );
+}
+
+export default function AuthErrorPage() {
+  return (
+    <Suspense fallback={<div>Chargement...</div>}>
+      <ErrorContent />
+    </Suspense>
   );
 } 
