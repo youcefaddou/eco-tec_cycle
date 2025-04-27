@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 
 export const metadata = {
@@ -18,16 +19,16 @@ export default function RecyclerPrimordialArticle() {
         <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">Recycler : le geste primordial pour protéger la Terre et ses ressources</h1>
         <img src="/proteger-terre.jpg" alt="Recyclage et protection de la Terre" className="rounded-lg w-full h-64 object-cover mb-6" />
         <h2 className="text-2xl font-semibold text-green-700 mb-4">Pourquoi recycler ?</h2>
-        <p className="mb-4 text-gray-800">Recycler permet de limiter la pollution, d&apos;économiser les ressources naturelles et de réduire la quantité de déchets enfouis ou incinérés. C&apos;est un geste simple qui a un impact direct sur la préservation de notre planète.</p>
+        <p className="mb-4 text-gray-800">Recycler permet de limiter la pollution, d'économiser les ressources naturelles et de réduire la quantité de déchets enfouis ou incinérés. C'est un geste simple qui a un impact direct sur la préservation de notre planète.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Les bénéfices du recyclage</h2>
         <ul className="list-disc pl-6 mb-4 text-gray-800">
-          <li>Réduction de l&apos;extraction de matières premières.</li>
+          <li>Réduction de l'extraction de matières premières.</li>
           <li>Diminution des émissions de gaz à effet de serre.</li>
           <li>Préservation de la biodiversité et des écosystèmes.</li>
-          <li>Création d&apos;emplois dans la filière du recyclage.</li>
+          <li>Création d'emplois dans la filière du recyclage.</li>
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Comment agir au quotidien ?</h2>
-        <p className="mb-4 text-gray-800">Triez vos équipements usagés, déposez-les dans les points de collecte adaptés et sensibilisez votre entourage à l&apos;importance du recyclage. Chaque geste compte pour un avenir plus durable.</p>
+        <p className="mb-4 text-gray-800">Triez vos équipements usagés, déposez-les dans les points de collecte adaptés et sensibilisez votre entourage à l'importance du recyclage. Chaque geste compte pour un avenir plus durable.</p>
         <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis à jour en 2025</div>
       </article>
     </main>
