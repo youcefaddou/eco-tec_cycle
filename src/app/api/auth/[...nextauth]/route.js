@@ -34,13 +34,14 @@ export const authOptions = {
   session: { strategy: "jwt" },
   callbacks: {
     async session({ session, token }) {
+      console.log("[next-auth][debug][SESSION_CALLBACK]", { session, token });
       if (session?.user) {
         session.user.id = token.sub;
       }
       return session;
     },
     async signIn({ user, account, profile, email, credentials }) {
-      // Autorise tout, mais log pour debug
+      console.log("[next-auth][debug][SIGNIN_CALLBACK]", { user, account, profile, email, credentials });
       return true;
     },
   },
