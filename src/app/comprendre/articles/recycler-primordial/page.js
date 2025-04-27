@@ -28,7 +28,7 @@ export default function RecyclerPrimordialArticle() {
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Comment agir au quotidien ?</h2>
         <p className="mb-4 text-gray-800">Triez vos équipements usagés, déposez-les dans les points de collecte adaptés et sensibilisez votre entourage à l&apos;importance du recyclage. Chaque geste compte pour un avenir plus durable.</p>
-        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis a jour en 2025</div>
+        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis à jour en 2025</div>
       </article>
     </main>
   );

@@ -29,8 +29,8 @@ export default function RecyclageFonctionnementArticle() {
           <li>Créer des emplois dans la filière du recyclage.</li>
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Le rôle du consommateur</h2>
-        <p className="mb-4 text-gray-800">En déposant vos appareils dans les points de collecte, vous participez activement &agrave; la préservation de l&apos;environnement et &agrave; l&apos;économie circulaire.</p>
-        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis àagrave; jour en 2025</div>
+        <p className="mb-4 text-gray-800">En déposant vos appareils dans les points de collecte, vous participez activement à la préservation de l&apos;environnement et à l&apos;économie circulaire.</p>
+        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis à jour en 2025</div>
       </article>
     </main>
   );
