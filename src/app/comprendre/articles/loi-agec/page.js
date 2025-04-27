@@ -27,8 +27,8 @@ export default function LoiAGECArticle() {
           <li>Responsabiliser les producteurs sur la gestion de la fin de vie des produits.</li>
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Quel impact pour les consommateurs ?</h2>
-        <p className="mb-4 text-gray-800">Grâce àagrave; la loi AGEC, il est plus facile de réparer, recycler ou donner une seconde vie àagrave; ses appareils. Les consommateurs sont mieux informés et peuvent faire des choix plus responsables.</p>
-        <h2 className="text-xl font-semibold text-green-700 mb-3">Un pas vers l'éapos;économie circulaire</h2>
+        <p className="mb-4 text-gray-800">Grâce à la loi AGEC, il est plus facile de réparer, recycler ou donner une seconde vie à ses appareils. Les consommateurs sont mieux informés et peuvent faire des choix plus responsables.</p>
+        <h2 className="text-xl font-semibold text-green-700 mb-3">Un pas vers l&apos;économie circulaire</h2>
         <p className="mb-4 text-gray-800">La loi AGEC s&apos;inscrit dans une démarche globale pour préserver les ressources naturelles et limiter l&apos;impact environnemental de nos déchets.</p>
         <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis àagrave; jour en 2025</div>
       </article>

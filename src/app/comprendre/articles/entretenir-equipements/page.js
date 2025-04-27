@@ -21,11 +21,11 @@ export default function EntretenirEquipementsArticle() {
         <p className="mb-4 text-gray-800">Un bon entretien permet de prolonger la durée de vie de vos équipements, d&apos;éviter les pannes prématurées et de réduire la production de déchets électroniques. Cela contribue aussi &agrave; faire des économies et &agrave; préserver l&apos;environnement.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Quelques gestes simples</h2>
         <ul className="list-disc pl-6 mb-4 text-gray-800">
-          <li>Nettoyez régulièrement vos appareils pour éviter l'accumulation de poussière.</li>
-          <li>Respectez les consignes d'utilisation et d'entretien du fabricant.</li>
+          <li>Nettoyez régulièrement vos appareils pour éviter l&apos;accumulation de poussière.</li>
+          <li>Respectez les consignes d&apos;utilisation et d&apos;entretien du fabricant.</li>
           <li>Débranchez les appareils non utilisés pour économiser l&apos;énergie.</li>
           <li>Faites vérifier vos équipements par un professionnel en cas de dysfonctionnement.</li>
-          <li>Remplacez les pièces usées plutôt que l'appareil complet si possible.</li>
+          <li>Remplacez les pièces usées plutôt que l&apos;appareil complet si possible.</li>
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Quand réparer ou recycler ?</h2>
         <p className="mb-4 text-gray-800">Si un appareil ne fonctionne plus malgré un bon entretien, pensez &agrave; la réparation avant d&apos;envisager le recyclage. De nombreux réseaux de réparateurs existent. Si la réparation n&apos;est pas possible, déposez l&apos;appareil dans un point de collecte pour qu&apos;il soit recyclé dans les meilleures conditions.</p>
