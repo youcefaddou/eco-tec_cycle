@@ -29,7 +29,7 @@ export default function MapComponent({ showReturnHome }) {
   const router = useRouter();
 
   return (
-    <div className="h-screen w-full">
+    <div className="h-[100vh] w-full fixed top-0 left-0 z-0">
       <div className="flex flex-wrap flex-col sm:flex-row gap-2 p-2 sm:p-4 bg-green-300 border-b border-green-200 z-[1000] relative items-center">
         <div className="flex flex-row flex-wrap gap-2 w-full sm:w-auto justify-center">
           <button
@@ -57,7 +57,7 @@ export default function MapComponent({ showReturnHome }) {
           </button>
         )}
       </div>
-      <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: "90%", width: "100%" }}>
+      <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: "calc(100vh - 56px)", width: "100%" }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"
