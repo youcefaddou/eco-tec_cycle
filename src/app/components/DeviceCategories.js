@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const categories = [
     { label: "Gros appareils", icon: "📺" },
     { label: "Petits appareils", icon: "🔌" },

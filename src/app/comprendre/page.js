@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import BentoCard from "../components/BentoCard";
 import Link from "next/link";
 
