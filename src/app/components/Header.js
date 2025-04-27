@@ -64,7 +64,7 @@ export default function Header() {
                   <Link href="/login" className="px-4 py-1 rounded-full border border-green-600 text-green-700 font-semibold hover:bg-green-50 transition">Connexion</Link>
                 </li>
                 <li>
-                  <Link href="/register" className="px-4 py-1 rounded-full bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold hover:from-green-700 hover:to-emerald-600 transition shadow">S'inscrire</Link>
+                  <Link href="/register" className="px-4 py-1 rounded-full bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold hover:from-green-700 hover:to-emerald-600 transition shadow">S&apos;inscrire</Link>
                 </li>
               </>
             )}
@@ -100,7 +100,7 @@ export default function Header() {
                   <Link href="/login" className="block px-4 py-2 rounded-full border border-green-600 text-green-700 font-semibold hover:bg-green-50 transition" onClick={() => setOpen(false)}>Connexion</Link>
                 </li>
                 <li>
-                  <Link href="/register" className="block px-4 py-2 rounded-full bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold hover:from-green-700 hover:to-emerald-600 transition shadow" onClick={() => setOpen(false)}>S'inscrire</Link>
+                  <Link href="/register" className="block px-4 py-2 rounded-full bg-gradient-to-r from-green-600 to-emerald-500 text-white font-semibold hover:from-green-700 hover:to-emerald-600 transition shadow" onClick={() => setOpen(false)}>S&apos;inscrire</Link>
                 </li>
               </>
             )}

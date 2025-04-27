@@ -6,7 +6,7 @@ export default function UserSuggestions({ user }) {
     {
       type: "point",
       title: "Point de dépôt proche : Recyclerie Paris 12e",
-      desc: "À 1,2 km de chez vous. Ouvert jusqu&apos;à 18h.",
+      desc: "À 1,2 km de chez vous. Ouvert jusqu&apos;àagrave; 18h.",
       link: "/map"
     },
     {
@@ -17,7 +17,7 @@ export default function UserSuggestions({ user }) {
     },
     {
       type: "conseil",
-      title: "Conseil : Pensez à réparer avant de jeter !",
+      title: "Conseil : Pensez àagrave; réparer avant de jeter !",
       desc: "Un appareil réparable, c&apos;est un geste pour la planète.",
       link: "/comprendre"
     }

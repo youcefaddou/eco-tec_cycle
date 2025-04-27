@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { signIn, useSession } from "next-auth/react";
+import Link from "next/link";
 
 export default function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -17,8 +18,8 @@ export default function RegisterPage() {
 
   // Regex sécurisées
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
-  const nameRegex = /^[A-Za-zÀ-ÿ' -]{2,40}$/;
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};;'apos;:"\\|,.<>/?]).{8,}$/;
+  const nameRegex = /^[A-Za-zÀ-ÿÿ'apos; -]{2,40}$/;
 
   useEffect(() => {
     if (status === "authenticated") {
@@ -125,7 +126,7 @@ export default function RegisterPage() {
           </button>
         </form>
         <div className="text-center text-gray-500 mt-4 text-sm">
-          Déjà inscrit ? <a href="/login" className="text-emerald-700 font-semibold hover:underline">Se connecter</a>
+          Déjà inscrit ? <Link href="/login" className="text-emerald-700 font-semibold hover:underline">Se connecter</Link>
         </div>
       </div>
     </main>

@@ -12,7 +12,7 @@ export default function QuickActions() {
           <div className="p-4 md:p-6 rounded-lg shadow hover:shadow-lg transition border">
             <h2 className="text-xl font-bold mb-2 text-green-700">R&eacute;parer</h2>
             <p className="mb-4 text-gray-600">Prolongez la vie de vos &eacute;quipements gr&acirc;ce &agrave; la r&eacute;paration.</p>
-            <a href="#" className="text-green-600 font-semibold hover:underline">Trouver un r&eacute;parateur</a>
+            <span className="text-green-600 font-semibold hover:underline">Trouver un r&eacute;parateur</span>
           </div>
           <div className="p-4 md:p-6 rounded-lg shadow hover:shadow-lg transition border">
             <h2 className="text-xl font-bold mb-2 text-green-700">Comprendre</h2>

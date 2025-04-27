@@ -18,7 +18,7 @@ const cards = [
     link: "/comprendre/articles/loi-agec",
   },
   {
-    title: "Info-tri : signalétique et consignes à savoir",
+    title: "Info-tri : signalétique et consignes àagrave; savoir",
     image: "/tri-signaletique.jpg",
     link: "/comprendre/articles/info-tri",
   },

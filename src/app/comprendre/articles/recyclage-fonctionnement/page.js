@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export const metadata = {
   title: "Recyclage de vos équipements : comment cela fonctionne ? | Eco-Tec Cycle",
-  description: "Découvrez le parcours de vos appareils électriques et électroniques lors du recyclage, de la collecte à la valorisation des matériaux.",
+  description: "Découvrez le parcours de vos appareils électriques et électroniques lors du recyclage, de la collecte àagrave; la valorisation des matériaux.",
   keywords: "recyclage, fonctionnement, collecte, tri, valorisation, électronique, déchets, Eco-Tec Cycle"
 };
 
@@ -28,8 +28,8 @@ export default function RecyclageFonctionnementArticle() {
           <li>Créer des emplois dans la filière du recyclage.</li>
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Le rôle du consommateur</h2>
-        <p className="mb-4 text-gray-800">En déposant vos appareils dans les points de collecte, vous participez activement à la préservation de l'environnement et à l'économie circulaire.</p>
-        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis à jour en 2025</div>
+        <p className="mb-4 text-gray-800">En déposant vos appareils dans les points de collecte, vous participez activement àagrave; la préservation de l'environnement et àagrave; l'éapos;économie circulaire.</p>
+        <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis àagrave; jour en 2025</div>
       </article>
     </main>
   );

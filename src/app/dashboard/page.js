@@ -37,7 +37,7 @@ export default function DashboardPage() {
   const [locationError, setLocationError] = useState("");
 
   // Regex ville/adresse : lettres, chiffres, espaces, tirets, virgules, points, 2-80 caractères
-  const locationRegex = /^[A-Za-zÀ-ÿ0-9'\-., ]{2,80}$/;
+  const locationRegex = /^[A-Za-zÀ-ÿ0-9'\apos;\-., ]{2,80}$/;
 
   useEffect(() => {
     if (status === "unauthenticated") {
@@ -109,7 +109,7 @@ export default function DashboardPage() {
                 </div>
                 <button type="submit" className="w-full bg-gradient-to-r from-green-600 to-emerald-500 text-white py-2 rounded-lg font-semibold hover:from-green-700 hover:to-emerald-600 transition shadow transform hover:scale-105 duration-200">Valider</button>
               </form>
-              <Link href="/" className="block mt-6 text-green-600 font-semibold hover:underline">Retour à l'accueil</Link>
+              <Link href="/" className="block mt-6 text-green-600 font-semibold hover:underline">Retour àagrave; l'accueil</Link>
             </div>
           </div>
         </div>

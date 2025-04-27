@@ -9,8 +9,8 @@ export default function Footer() {
           <li><Link href="/comprendre" className="hover:underline">Comprendre</Link></li>
           <li><Link href="/map" className="hover:underline">Carte des points de collecte</Link></li>
           <li><Link href="/" className="hover:underline">Accueil</Link></li>
-          <li><a href="#" className="hover:underline">Mentions légales</a></li>
-          <li><a href="#" className="hover:underline">Contact</a></li>
+          <li><span className="hover:underline">Mentions l&eacute;gales</span></li>
+          <li><span className="hover:underline">Contact</span></li>
         </ul>
       </div>
     </footer>

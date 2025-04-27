@@ -1,5 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 export default function AuthErrorPage() {
   const searchParams = useSearchParams();
@@ -13,7 +14,7 @@ export default function AuthErrorPage() {
           Une erreur est survenue lors de la connexion.<br />
           <span className="text-red-600 font-mono">{error && `Code erreur : ${error}`}</span>
         </p>
-        <a href="/" className="text-green-600 font-semibold hover:underline">Retour à l'accueil</a>
+        <Link href="/" className="text-green-600 font-semibold hover:underline">Retour &agrave; l&apos;accueil</Link>
       </div>
     </main>
   );
