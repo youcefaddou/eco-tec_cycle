@@ -1,9 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import NextAuthSessionProvider from "./components/SessionProvider";
-import { usePathname } from "next/navigation";
+import ClientLayout from "./components/ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,20 +18,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Utilise usePathname pour détecter la route courante
-  const pathname = typeof window !== "undefined" ? window.location.pathname : "";
-  const isMap = pathname === "/map";
-
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${isMap ? "overflow-hidden" : ""}`}
-      >
-        <NextAuthSessionProvider>
-          <Header />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ClientLayout>
           {children}
-          {!isMap && <Footer />}
-        </NextAuthSessionProvider>
+        </ClientLayout>
       </body>
     </html>
   );

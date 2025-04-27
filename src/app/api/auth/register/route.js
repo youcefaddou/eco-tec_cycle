@@ -4,6 +4,7 @@ import bcrypt from "bcrypt";
 const prisma = new PrismaClient();
 
 export async function POST(req) {
+  console.log("Register endpoint hit");
   try {
     const { email, password, name } = await req.json();
     if (!email || !password || !name) {
