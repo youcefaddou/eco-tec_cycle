@@ -79,7 +79,7 @@ export default function MapComponent({ showReturnHome, showSidebar }) {
               onClick={handleReturn}
               className="w-full sm:w-auto mt-2 sm:mt-0 sm:ml-auto bg-green-700 text-white px-4 py-2 rounded-full font-semibold shadow hover:bg-green-800 transition"
             >
-              Retour à l'accueil
+              Retour à l&apos;accueil
             </button>
           )}
         </div>
