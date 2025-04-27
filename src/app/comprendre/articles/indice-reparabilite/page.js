@@ -15,7 +15,7 @@ export default function IndiceReparabiliteArticle() {
         <meta name="keywords" content={metadata.keywords} />
       </Head>
       <article className="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 animate-fadein">
-        <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">Indice de réparabilité : comprendre et agir</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">L&apos;indice de réparabilité : comprendre et agir</h1>
         <img src="/indice-de-reparabilite_equipements_concernes_calcul_note.webp" alt="Indice de réparabilité" className="rounded-lg w-full h-110 mb-6" />
         <h2 className="text-2xl font-semibold text-green-700 mb-4">Qu&apos;est-ce que l&apos;indice de réparabilité ?</h2>
         <p className="mb-4 text-gray-800">L&apos;indice de réparabilité est une note sur 10, affichée sur de nombreux appareils électroniques et électroménagers vendus en France. Il informe les consommateurs sur la facilité à réparer un produit, en prenant en compte la disponibilité des pièces détachées, la documentation technique, le démontage, et le prix des pièces.</p>

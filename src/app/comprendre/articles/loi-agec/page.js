@@ -28,8 +28,8 @@ export default function LoiAGECArticle() {
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Quel impact pour les consommateurs ?</h2>
         <p className="mb-4 text-gray-800">Grace à la loi AGEC, il est plus facile de réparer, recycler ou donner une seconde vie à ses appareils. Les consommateurs sont mieux informés et peuvent faire des choix plus responsables.</p>
-        <h2 className="text-xl font-semibold text-green-700 mb-3">Un pas vers l'économie circulaire</h2>
-        <p className="mb-4 text-gray-800">La loi AGEC s'inscrit dans une démarche globale pour préserver les ressources naturelles et limiter l'impact environnemental de nos déchets.</p>
+        <h2 className="text-xl font-semibold text-green-700 mb-3">Un pas vers l&apos;économie circulaire</h2>
+        <p className="mb-4 text-gray-800">La loi AGEC s&apos;inscrit dans une démarche globale pour préserver les ressources naturelles et limiter l&apos;impact environnemental de nos déchets.</p>
         <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis à jour en 2025</div>
       </article>
     </main>

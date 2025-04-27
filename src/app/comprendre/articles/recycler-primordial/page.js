@@ -22,12 +22,12 @@ export default function RecyclerPrimordialArticle() {
         <h2 className="text-xl font-semibold text-green-700 mb-3">Les bénéfices du recyclage</h2>
         <ul className="list-disc pl-6 mb-4 text-gray-800">
           <li>Réduction de l&apos;extraction de matières premières.</li>
-          <li>Diminution des émissions de gaz &agrave; effet de serre.</li>
+          <li>Diminution des émissions de gaz à effet de serre.</li>
           <li>Préservation de la biodiversité et des écosystèmes.</li>
           <li>Création d&apos;emplois dans la filière du recyclage.</li>
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Comment agir au quotidien ?</h2>
-        <p className="mb-4 text-gray-800">Triez vos équipements usagés, déposez-les dans les points de collecte adaptés et sensibilisez votre entourage &agrave; l&apos;importance du recyclage. Chaque geste compte pour un avenir plus durable.</p>
+        <p className="mb-4 text-gray-800">Triez vos équipements usagés, déposez-les dans les points de collecte adaptés et sensibilisez votre entourage à l&apos;importance du recyclage. Chaque geste compte pour un avenir plus durable.</p>
         <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis a jour en 2025</div>
       </article>
     </main>

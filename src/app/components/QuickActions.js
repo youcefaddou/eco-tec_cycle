@@ -6,7 +6,7 @@ export default function QuickActions() {
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 text-center">
           <div className="p-4 md:p-6 rounded-lg shadow hover:shadow-lg transition border">
             <h2 className="text-xl font-bold mb-2 text-green-700">Donner ou recycler</h2>
-            <p className="mb-4 text-gray-600">Trouvez rapidement o&ugrave; donner ou recycler vos appareils usag&eacute;s.</p>
+            <p className="mb-4 text-gray-600">Trouvez rapidement o&apos; donner ou recycler vos appareils usag&eacute;s.</p>
             <Link href="/map" className="text-green-600 font-semibold hover:underline">Voir les points</Link>
           </div>
           <div className="p-4 md:p-6 rounded-lg shadow hover:shadow-lg transition border">
