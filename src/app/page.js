@@ -1,3 +1,5 @@
+// src/app/page.js
+
 "use client";
 import { useEffect } from "react";
 import { useSession } from "next-auth/react";
