@@ -23,12 +23,12 @@ export default function RecyclageFonctionnementArticle() {
         <p className="mb-4 text-gray-800">Après collecte, les équipements sont dépollués (retrait des substances dangereuses), puis démontés pour séparer les différents matériaux : plastiques, métaux, verre, etc. Ces matériaux sont ensuite envoyés vers des filières de valorisation.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Pourquoi recycler ?</h2>
         <ul className="list-disc pl-6 mb-4 text-gray-800">
-          <li>Limiter l'impact environnemental des déchets électroniques.</li>
+          <li>Limiter l&apos;impact environnemental des déchets électroniques.</li>
           <li>Économiser les ressources naturelles en réutilisant les matériaux.</li>
           <li>Créer des emplois dans la filière du recyclage.</li>
         </ul>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Le rôle du consommateur</h2>
-        <p className="mb-4 text-gray-800">En déposant vos appareils dans les points de collecte, vous participez activement àagrave; la préservation de l'environnement et àagrave; l'éapos;économie circulaire.</p>
+        <p className="mb-4 text-gray-800">En déposant vos appareils dans les points de collecte, vous participez activement &agrave; la préservation de l&apos;environnement et &agrave; l&apos;économie circulaire.</p>
         <div className="mt-8 text-sm text-gray-500">Publié par Eco-Tec Cycle | Mis àagrave; jour en 2025</div>
       </article>
     </main>
