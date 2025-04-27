@@ -36,8 +36,8 @@ export default function Header() {
         </button>
         {/* Desktop nav */}
         <ul className="hidden md:flex gap-6 items-center w-full ml-8">
-          {navLinks.map((link) => (
-            <li key={link.href}>
+          {navLinks.map((link, idx) => (
+            <li key={link.href + '-' + idx}>
               <Link href={link.href} className="text-green-700 font-medium hover:text-green-900 transition">
                 {link.label}
               </Link>
@@ -73,8 +73,8 @@ export default function Header() {
         {/* Mobile nav */}
         {open && (
           <ul className="absolute top-full left-0 w-full bg-white shadow-lg flex flex-col gap-2 py-4 px-4 md:hidden animate-fadein z-50">
-            {navLinks.map((link) => (
-              <li key={link.href}>
+            {navLinks.map((link, idx) => (
+              <li key={link.href + '-' + idx}>
                 <Link href={link.href} className="block py-2 text-green-700 font-medium hover:text-green-900 transition" onClick={() => setOpen(false)}>
                   {link.label}
                 </Link>

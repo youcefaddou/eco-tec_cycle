@@ -38,7 +38,7 @@ export default function MapComponent({ showReturnHome, showSidebar }) {
   };
 
   return (
-    <div className="h-[100vh] w-full fixed top-0 left-0 z-0 pt-16 flex">
+    <div className="h-fit-content w-full relative top-0 left-0 z-0 flex">
       {/* Sidebar points à droite */}
       {showSidebar && (
         <aside className="w-80 bg-white/95 h-full overflow-y-auto shadow-xl p-4 flex flex-col gap-4 z-50">
@@ -83,7 +83,7 @@ export default function MapComponent({ showReturnHome, showSidebar }) {
             </button>
           )}
         </div>
-        <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: "calc(100vh - 56px)", width: "100%" }}>
+        <MapContainer center={[46.603354, 1.888334]} zoom={6} style={{ height: "calc(91vh - 56px)", width: "100%" }}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution="© OpenStreetMap contributors"

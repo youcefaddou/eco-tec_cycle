@@ -38,7 +38,7 @@ export const authOptions = {
   session: { strategy: "jwt" },
   callbacks: {
     async session({ session, token }) {
-      console.log("[next-auth][debug][SESSION_CALLBACK]", { session, token });
+
       if (session?.user) {
         session.user.id = token.sub;
       }
@@ -46,10 +46,10 @@ export const authOptions = {
     },
     async signIn({ user, account, profile, email, credentials }) {
       try {
-        console.log("[next-auth][debug][SIGNIN_CALLBACK]", { user, account, profile, email, credentials });
+        
         return true;
       } catch (e) {
-        console.error("[next-auth][error][SIGNIN_CALLBACK]", e);
+
         return false;
       }
     },
@@ -59,7 +59,7 @@ export const authOptions = {
     error: "/auth/error",
   },
   secret: process.env.NEXTAUTH_SECRET,
-  debug: true,
+  debug: false,
 };
 
 const handler = NextAuth(authOptions);

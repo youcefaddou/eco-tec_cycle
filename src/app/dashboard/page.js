@@ -8,6 +8,7 @@ import UserProfileCard from "../components/UserProfileCard";
 import UserStats from "../components/UserStats";
 import UserHistory from "../components/UserHistory";
 import UserSuggestions from "../components/UserSuggestions";
+import { motion } from "framer-motion";
 
 const devices = [
   "Smartphone",
@@ -66,15 +67,53 @@ export default function DashboardPage() {
       <div className="w-full max-w-md mx-auto flex flex-col gap-10 px-2 md:max-w-5xl md:px-0">
         {/* Ligne 1 : Profil, Stats, Historique */}
         <div className="grid grid-cols-1 md:flex gap-4 md:gap-8 mt-5 items-stretch animate-slidein-up">
-          <div className="min-h-[180px] flex"><UserProfileCard user={session.user} /></div>
-          <div className="min-h-[180px] flex"><UserStats user={session.user} /></div>
-          <div className="min-h-[180px] flex"><UserHistory user={session.user} /></div>
+          <motion.div
+            className="min-h-[180px] flex"
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, delay: 0, type: 'spring', stiffness: 120 }}
+          >
+            <UserProfileCard user={session.user} />
+          </motion.div>
+          <motion.div
+            className="min-h-[180px] flex"
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.1, type: 'spring', stiffness: 120 }}
+          >
+            <UserStats user={session.user} />
+          </motion.div>
+          <motion.div
+            className="min-h-[180px] flex"
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.2, type: 'spring', stiffness: 120 }}
+          >
+            <UserHistory user={session.user} />
+          </motion.div>
         </div>
         {/* Ligne 2 : Suggestions, Nouvelle action */}
         <div className="grid grid-cols-1 md:flex gap-4 md:gap-8 items-stretch animate-slidein-up delay-100">
-          <div className="min-h-[180px] flex"><UserSuggestions user={session.user} /></div>
-          <div className="min-h-[180px] flex">
-            <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg w-full text-center mx-auto animate-fadein delay-200 flex flex-col justify-center h-full min-h-[180px]">
+          <motion.div
+            className="min-h-[180px] flex"
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, delay: 0, type: 'spring', stiffness: 120 }}
+          >
+            <UserSuggestions user={session.user} />
+          </motion.div>
+          <motion.div
+            className="min-h-[180px] flex"
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.1, type: 'spring', stiffness: 120 }}
+          >
+            <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg w-full text-center mx-auto flex flex-col justify-center h-full min-h-[180px]">
               <h1 className="text-2xl font-bold text-green-800 mb-4">Nouvelle action</h1>
               <p className="mb-6 text-black">Connecté en tant que <span className="font-semibold text-black">{session.user.name || session.user.email}</span></p>
               <form className="space-y-6" onSubmit={e => {
@@ -111,7 +150,7 @@ export default function DashboardPage() {
               </form>
               <Link href="/" className="block mt-6 text-green-600 font-semibold hover:underline">Retour &agrave; l&apos;accueil</Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <style jsx global>{`
