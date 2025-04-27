@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const cards = [
   {
-    title: "L'indice de réparabilité",
+    title: "L&apos;indice de réparabilité",
     image: "/indice-de-reparabilite_equipements_concernes_calcul_note.webp",
     link: "/comprendre/articles/indice-reparabilite",
   },
@@ -37,7 +37,7 @@ const cards = [
 export default function ComprendrePage() {
   return (
     <main className="min-h-screen bg-green-50 py-12">
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-10">Comprendre le recyclage et l'entretien</h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-10">Comprendre le recyclage et l&apos;entretien</h1>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {cards.map((card) => (
           <BentoCard key={card.title} {...card} />
