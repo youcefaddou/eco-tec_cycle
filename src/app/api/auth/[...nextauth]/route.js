@@ -7,6 +7,10 @@ import bcrypt from "bcrypt";
 
 const prisma = new PrismaClient();
 
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("[next-auth][error][UNHANDLED_REJECTION]", reason);
+});
+
 export const authOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
@@ -41,8 +45,13 @@ export const authOptions = {
       return session;
     },
     async signIn({ user, account, profile, email, credentials }) {
-      console.log("[next-auth][debug][SIGNIN_CALLBACK]", { user, account, profile, email, credentials });
-      return true;
+      try {
+        console.log("[next-auth][debug][SIGNIN_CALLBACK]", { user, account, profile, email, credentials });
+        return true;
+      } catch (e) {
+        console.error("[next-auth][error][SIGNIN_CALLBACK]", e);
+        return false;
+      }
     },
   },
   pages: {
