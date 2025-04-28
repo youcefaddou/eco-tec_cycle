@@ -52,7 +52,7 @@ body {
 .keyfig-animate {
   animation: keyfig-bouncein 0.8s cubic-bezier(.23,1.12,.67,1.01) both;
 }
-
+/* animation pour les pages */
 @keyframes page-fadein {
   0% {
     opacity: 0;
