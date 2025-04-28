@@ -4,7 +4,7 @@ import { useInView, motion } from 'framer-motion';
 
 /**
  * Hook pour animer un composant à l'entrée dans le viewport.
- * @param {Object} options - options pour l'animation (ex: { y: 40, duration: 0.7 })
+ * @param {Object} options - options pour l'animation (ex: { y: 40, duration: 1 })
  * @returns {Object} { ref, MotionWrapper, inView }
  */
 export function useInViewAnimation(options = {}) {
@@ -13,7 +13,7 @@ export function useInViewAnimation(options = {}) {
   const {
     y = 40,
     opacity = 0,
-    duration = 0.7,
+    duration = 1,
     delay = 0,
     ...rest
   } = options;
