@@ -1,11 +1,12 @@
 "use client";
+// import { motion } from "framer-motion";
 /* eslint-disable react/no-unescaped-entities */
 import BentoCard from "../components/BentoCard";
 import Link from "next/link";
 
 const cards = [
   {
-    title: "L'indice de réparabilité",
+    title: "L'indice de réparabilité : comprendre et agir",
     image: "/indice-de-reparabilite_equipements_concernes_calcul_note.webp",
     link: "/comprendre/articles/indice-reparabilite",
   },
@@ -38,11 +39,21 @@ const cards = [
 
 export default function ComprendrePage() {
   return (
-    <main className="min-h-screen bg-green-50 py-12">
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-10">Comprendre le recyclage et l'entretien</h1>
+    <main className="min-h-screen bg-green-50 py-12 page-fadein">
+      <h1
+        className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-10 animate-fadein"
+      >
+        Comprendre le recyclage et l'entretien
+      </h1>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-        {cards.map((card) => (
-          <BentoCard key={card.title} {...card} />
+        {cards.map((card, i) => (
+          <div
+            key={card.title}
+            className="animate-fadein"
+            style={{ animationDelay: `${i * 0.13}s`, animationFillMode: 'both' }}
+          >
+            <BentoCard {...card} />
+          </div>
         ))}
       </div>
       <Link href="/comprendre">Comprendre</Link>

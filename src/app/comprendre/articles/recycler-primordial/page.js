@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
+import Image from "next/image";
 
 export const metadata = {
   title: "Recycler : le geste primordial pour protéger la Terre et ses ressources | Eco-Tec Cycle",
@@ -17,7 +18,7 @@ export default function RecyclerPrimordialArticle() {
       </Head>
       <article className="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 animate-fadein">
         <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">Recycler : le geste primordial pour protéger la Terre et ses ressources</h1>
-        <img src="/proteger-terre.jpg" alt="Recyclage et protection de la Terre" className="rounded-lg w-full h-64 object-cover mb-6" />
+        <Image src="/proteger-terre.jpg" alt="Recyclage et protection de la Terre" width={800} height={360} style={{ height: 'auto', width: '100%' }} className="rounded-lg w-full h-64 object-cover mb-6" />
         <h2 className="text-2xl font-semibold text-green-700 mb-4">Pourquoi recycler ?</h2>
         <p className="mb-4 text-gray-800">Recycler permet de limiter la pollution, d'économiser les ressources naturelles et de réduire la quantité de déchets enfouis ou incinérés. C'est un geste simple qui a un impact direct sur la préservation de notre planète.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Les bénéfices du recyclage</h2>

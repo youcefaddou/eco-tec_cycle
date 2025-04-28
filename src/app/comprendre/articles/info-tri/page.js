@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
+import Image from "next/image";
 
 export const metadata = {
   title: "Info-tri : signalétique et consignes à savoir | Eco-Tec Cycle",
@@ -17,7 +18,7 @@ export default function InfoTriArticle() {
       </Head>
       <article className="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 animate-fadein">
         <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">Info-tri : bien trier ses équipements</h1>
-        <img src="/tri-signaletique.jpg" alt="Info-tri signalétique recyclage" className="rounded-lg w-full h-140 object-cover mb-6" />
+        <Image src="/tri-signaletique.jpg" alt="Info-tri signalétique recyclage" width={800} height={360} style={{ height: 'auto', width: '100%' }} className="rounded-lg w-full h-140 object-cover mb-6" />
         <h2 className="text-2xl font-semibold text-green-700 mb-4">Qu'est-ce que l'info-tri ?</h2>
         <p className="mb-4 text-gray-800">L'info-tri est un pictogramme apposé sur les équipements électriques et électroniques pour indiquer la bonne façon de les trier en fin de vie. Il aide les consommateurs à adopter les bons gestes de tri et à éviter que ces appareils ne finissent à la poubelle classique.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Les principaux logos à connaître</h2>

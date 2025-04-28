@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
+import Image from "next/image";
 
 export const metadata = {
   title: "Entretenir ses équipements électriques | Eco-Tec Cycle",
@@ -17,7 +18,7 @@ export default function EntretenirEquipementsArticle() {
       </Head>
       <article className="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 animate-fadein">
         <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">Entretenir ses équipements électriques</h1>
-        <img src="/entretien-equipement.jpg" alt="Entretien équipements électriques" className="rounded-lg w-full h-100 object-cover mb-6" />
+        <Image src="/entretien-equipement.jpg" alt="Entretien équipements électriques" width={800} height={360} style={{ height: 'auto', width: '100%' }} className="rounded-lg w-full h-100 object-cover mb-6" />
         <h2 className="text-2xl font-semibold text-green-700 mb-4">Pourquoi entretenir ses appareils ?</h2>
         <p className="mb-4 text-gray-800">Un bon entretien permet de prolonger la durée de vie de vos équipements, d'éviter les pannes prématurées et de réduire la production de déchets électroniques. Cela contribue aussi à faire des économies et à préserver l'environnement.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Quelques gestes simples</h2>

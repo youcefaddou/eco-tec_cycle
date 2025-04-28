@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
+import Image from "next/image";
 
 export const metadata = {
   title: "Recyclage de vos équipements : comment cela fonctionne ? | Eco-Tec Cycle",
@@ -17,7 +18,7 @@ export default function RecyclageFonctionnementArticle() {
       </Head>
       <article className="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 animate-fadein">
         <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">Recyclage de vos équipements : comment cela fonctionne ?</h1>
-        <img src="/recyclage-equipement.png" alt="Recyclage fonctionnement" className="rounded-lg w-full h-110 object-cover mb-6" />
+        <Image src="/recyclage-equipement.png" alt="Recyclage fonctionnement" width={800} height={360} style={{ height: 'auto', width: '100%' }} className="rounded-lg w-full h-110 object-cover mb-6" />
         <h2 className="text-2xl font-semibold text-green-700 mb-4">De la collecte au recyclage</h2>
         <p className="mb-4 text-gray-800">Le recyclage des équipements électriques et électroniques commence par la collecte dans des points dédiés. Les appareils sont ensuite triés selon leur nature (piles, écrans, petits ou gros appareils, etc.).</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Le tri et le traitement</h2>

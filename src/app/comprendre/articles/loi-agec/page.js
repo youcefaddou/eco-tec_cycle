@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
+import Image from "next/image";
 
 export const metadata = {
   title: "La loi AGEC : Pour une économie circulaire | Eco-Tec Cycle",
@@ -17,7 +18,7 @@ export default function LoiAGECArticle() {
       </Head>
       <article className="max-w-3xl mx-auto bg-white rounded-xl shadow p-8 animate-fadein">
         <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-6">La loi AGEC : Pour une économie circulaire</h1>
-        <img src="/loi-agec-economie-circulaire.jpg" alt="Loi AGEC économie circulaire" className="rounded-lg w-full h-90 object-cover mb-6" />
+        <Image src="/loi-agec-economie-circulaire.jpg" alt="Loi AGEC économie circulaire" width={800} height={360} style={{ height: 'auto', width: '100%' }} className="rounded-lg w-full h-90 object-cover mb-6" />
         <h2 className="text-2xl font-semibold text-green-700 mb-4">Qu'est-ce que la loi AGEC ?</h2>
         <p className="mb-4 text-gray-800">La loi AGEC (Anti-Gaspillage pour une Économie Circulaire) vise à transformer notre modèle de production et de consommation pour limiter le gaspillage, favoriser le recyclage et encourager la réparation.</p>
         <h2 className="text-xl font-semibold text-green-700 mb-3">Les grands axes de la loi</h2>
