@@ -3,13 +3,14 @@ import { useRef } from 'react';
 import { useInView, motion } from 'framer-motion';
 
 /**
- * Hook pour animer un composant à l'entrée dans le viewport.
+ * Hook pour animer un composant à l'entrée dans le viewport ET à chaque rechargement de page.
  * @param {Object} options - options pour l'animation (ex: { y: 40, duration: 0.7 })
  * @returns {Object} { ref, MotionWrapper, inView }
  */
 export function useInViewAnimation(options = {}) {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: '-40px' });
+  // Animation à chaque entrée dans le viewport (scroll) et à chaque reload
+  const inView = useInView(ref, { once: false, margin: '-40px' });
   const {
     y = 40,
     opacity = 0,
