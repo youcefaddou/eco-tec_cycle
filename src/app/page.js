@@ -1,30 +1,19 @@
 // src/app/page.js
 
-"use client";
-import { useEffect } from "react";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
 import HeroSection from "./components/HeroSection";
 import QuickActions from "./components/QuickActions";
 import KeyFigures from "./components/KeyFigures";
 import DeviceCategories from "./components/DeviceCategories";
 
+export const metadata = {
+  title: "Eco-Tec Cycle | Recyclage et Réparation d'Équipements Électroniques",
+  description: "Découvrez comment recycler, réparer et prolonger la vie de vos équipements électroniques avec Eco-Tec Cycle. Conseils, guides et solutions pour une consommation responsable.",
+};
+
 export default function Home() {
-  const { data: session, status } = useSession();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (status === "authenticated") {
-      router.replace("/dashboard");
-    }
-  }, [status, router]);
-
-  if (status === "authenticated") {
-    return null;
-  }
-
   return (
     <main>
+      <h1 className="sr-only">Eco-Tec Cycle - Recyclage et Réparation d'Équipements Électroniques</h1>
       <HeroSection />
       <QuickActions />
       <KeyFigures />

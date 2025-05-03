@@ -1,4 +1,3 @@
-"use client";
 // import { motion } from "framer-motion";
 /* eslint-disable react/no-unescaped-entities */
 import BentoCard from "../components/BentoCard";
